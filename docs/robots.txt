@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://krooked-sloth.github.io/range-funding-radar/docs/sitemap.xml

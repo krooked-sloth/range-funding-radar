@@ -1,0 +1,34 @@
+name: Program correction or update
+description: Submit a changed deadline, funding term, status, or official link.
+title: "Update: [state and program]"
+labels: ["program update"]
+body:
+  - type: input
+    id: program
+    attributes:
+      label: State and program
+      placeholder: Washington FARR
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Official source URL
+      description: Use the issuing agency or another primary government source.
+      placeholder: https://...
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: What changed?
+      placeholder: The agency moved the deadline from ... to ...
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Source check
+      options:
+        - label: I linked an official or primary source.
+          required: true

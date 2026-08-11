@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Range Funding Radar | U.S. Shooting Range Grants</title>
+  <meta name="description" content="A source-linked directory of U.S. shooting range grants, deadlines, match requirements, and project rules maintained by Range Operations.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://krooked-sloth.github.io/range-funding-radar/docs/">
+  <meta property="og:title" content="Range Funding Radar">
+  <meta property="og:description" content="Current and upcoming U.S. shooting-range grants, deadlines, match requirements, and official sources.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://krooked-sloth.github.io/range-funding-radar/docs/">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Dataset","name":"Range Funding Radar","description":"A source-linked directory of U.S. shooting-range grant programs and application windows.","url":"https://krooked-sloth.github.io/range-funding-radar/docs/","creator":{"@type":"Organization","name":"Range Operations","url":"https://rangeoperations.com"},"license":"https://opensource.org/license/mit"}
+  </script>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <p class="eyebrow">A public project from Range Operations</p>
+      <h1>Range Funding Radar</h1>
+      <p class="lede">A source-linked view of shooting-range grants, deadlines, matching requirements, and the project rules that matter before a range applies.</p>
+      <div class="hero-actions">
+        <a class="button" href="#programs">View programs</a>
+        <a class="button secondary" href="https://github.com/krooked-sloth/range-funding-radar">Use the open data</a>
+      </div>
+      <p id="verified" class="verified">Loading verified program data…</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="summary" aria-label="Directory summary">
+      <article><strong id="open-count">0</strong><span>open now</span></article>
+      <article><strong id="upcoming-count">0</strong><span>upcoming</span></article>
+      <article><strong id="tracked-count">0</strong><span>programs tracked</span></article>
+    </section>
+
+    <section class="intro">
+      <div>
+        <p class="eyebrow">Built for working range projects</p>
+        <h2>Start with the official program, not a generic grant list.</h2>
+      </div>
+      <p>Every record links to the issuing agency and shows when it was checked. Funding rules change. Confirm the current application before committing match funds, design work, or a project schedule.</p>
+    </section>
+
+    <section id="programs" class="directory">
+      <div class="directory-head">
+        <div>
+          <p class="eyebrow">Funding directory</p>
+          <h2>Current and upcoming programs</h2>
+        </div>
+        <div class="filters" aria-label="Filter programs">
+          <button class="filter active" data-status="all">All</button>
+          <button class="filter" data-status="open">Open</button>
+          <button class="filter" data-status="upcoming">Upcoming</button>
+          <button class="filter" data-status="watch">Award and watch</button>
+        </div>
+      </div>
+      <div id="program-list" class="program-list" aria-live="polite"></div>
+    </section>
+
+    <section class="service">
+      <p class="eyebrow">When the project needs a mapped footprint</p>
+      <h2>Range Operations supports the mapping piece.</h2>
+      <p>We prepare outdoor safety-fan and Surface Danger Zone maps, projectile-containment site plans, and shotfall or range-footprint exhibits for owner, grant, permit, and qualified-team workflows. The governing agency and responsible professionals still control the required standard, signer, and final determination.</p>
+      <div class="hero-actions">
+        <a class="button" href="https://rangeoperations.com/range-grant-funding.html">See grant-project mapping</a>
+        <a class="text-link" href="https://apps.apple.com/us/app/range-master-danger-zone/id6785127377">Try Range Master for first-pass planning</a>
+      </div>
+    </section>
+
+    <section class="notice">
+      <h2>Know of a change?</h2>
+      <p>Submit the official source and we will verify it. The directory does not accept paid placement, commercial grant lists, or unsourced deadlines.</p>
+      <a class="text-link" href="https://github.com/krooked-sloth/range-funding-radar/issues/new?template=program-update.yml">Submit a correction</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-grid">
+      <p><strong>Range Funding Radar</strong><br>Maintained by <a href="https://rangeoperations.com">Range Operations</a>, a Falconer Operations Group company.</p>
+      <p><a href="https://falconeroperations.com">Falconer Operations</a> · <a href="https://github.com/krooked-sloth/range-funding-radar">GitHub</a> · <a href="https://rangeoperations.com/contact.html">Written contact</a></p>
+    </div>
+  </footer>
+  <script src="app.js" defer></script>
+</body>
+</html>
